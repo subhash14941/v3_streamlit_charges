@@ -56,7 +56,7 @@ curBots+=basket_bots
 for bskt in basket_bots:
     botNameDic[bskt]=bskt.upper()
     botCapitalDic[bskt]=300000
-botName = query_params["bot"][0] if "bot" in query_params else None
+botName = query_params["bot"][0].lower() if "bot" in query_params else None
 
 
 
